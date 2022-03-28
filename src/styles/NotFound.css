@@ -27,4 +27,7 @@
     50% { border-color: orange; }
   }
 
-
+img {
+    margin: 2rem 2rem 0 0;
+    min-width: 3rem;
+}
