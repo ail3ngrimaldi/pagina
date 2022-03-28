@@ -1,4 +1,3 @@
-import React from 'react';
 import '../styles/Header.css';
 import {
   Nav,
@@ -24,8 +23,6 @@ const Navbar = () => {
           <NavLink className='efectoNav' to='/projects' >
             Portfolio
           </NavLink>
-          {/* Second Nav */}
-          {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
         </NavMenu>
         <NavBtn>
           <NavBtnLink to='/contact'>Contact</NavBtnLink>
