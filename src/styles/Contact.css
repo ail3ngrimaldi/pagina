@@ -16,10 +16,9 @@
 }
 
 input {
-    /* padding: 0.6rem 0 0.4rem 0;
-   
+     padding: 0.6rem 0 0.4rem 0;
     line-height: 1.5;
-    color: hsl(210, 9%, 31%); */
+    color: hsl(210, 9%, 31%);
     margin: 0 0 0.5rem 0;
     font-size: 1rem;
     font-weight: 400;
@@ -31,6 +30,7 @@ input {
 
 .send_button {
             font-size: 20px;
+            font-family: 'Roboto Mono', monospace;
             font-weight: 200;
             letter-spacing: 1px;
             padding: 13px 50px 13px;
