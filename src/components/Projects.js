@@ -4,7 +4,7 @@ function Projects () {
     return (
         <div className='paragraph'>
             <h2>Projects</h2>
-            <p>My firsts projects where developed as a student in 'Soy Henry', there's been a long way from that moment to my present, so there's an updated list:
+            <p>My firsts projects were developed as a student in 'Soy Henry', there's been a long way from that moment to my present, so there's an updated list:
             </p>
             <ul className='ul_projects'>
                 <li> An e-commerce for a candle store located in Córdoba, Argentina.</li>
