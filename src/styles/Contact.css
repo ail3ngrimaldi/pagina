@@ -63,8 +63,7 @@ form {
 }
 
 .col {
-        display: flex;
-        
+        display: flex;     
     }
 
 label {
