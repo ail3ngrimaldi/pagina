@@ -110,11 +110,12 @@
     cursor: pointer;
     position: relative;
     background-color: rgba(0, 0, 0, 0);
+    z-index: 0;
 }
 
 .app-form-button::after {
     content: "";
-    background-color: #ffe54c;
+    background-color: hsl(11, 80%, 63%);
     width: 100%;
     z-index: -1;
     position: absolute;
