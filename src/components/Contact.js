@@ -20,7 +20,7 @@ export default function Contact () {
                         </div>
                     </div>
                 </form>
-            <button className='ContactButton'>Send</button>
+            <button type='button' className='send_button'>Send</button>
         </div>
     );
 }
