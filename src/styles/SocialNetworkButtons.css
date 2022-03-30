@@ -1,14 +1,14 @@
+.social-a {
+    display: contents;
+    font-style: bold;
+    color: #333;
+}
 
 .social-container .flex-center {
 	display: flex;
 	justify-content: center;
-	align-items: center;
-    
+	align-items: center;    
 }
-
-/* 
-	background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
-} */
 
 .social-links {
 	display: flex;
