@@ -12,21 +12,21 @@ export default function Contact () {
             <span>Contact</span>
             <span>me</span>
           </div>
-          <div className="app-contact">CONTACT INFO : +54 11 3432 3195</div>
+          <div className="app-contact">Acá iconos de redes sociales: +54 11 1111 1111</div>
         </div>
         <div className="screen-body-item">
           <div className="app-form">
             <div className="app-form-group">
-              <input className="app-form-control" placeholder="NAME"/>
+              <input className="app-form-control" placeholder="Name"/>
             </div>
             <div className="app-form-group">
-              <input className="app-form-control" placeholder="EMAIL"/>
+              <input className="app-form-control" placeholder="Email"/>
             </div>
-            <div className="app-form-group">
+            {/* <div className="app-form-group">
               <input className="app-form-control" placeholder="CONTACT NO"/>
-            </div>
+            </div> */}
             <div className="app-form-group message">
-              <input className="app-form-control" placeholder="MESSAGE"/>
+              <input className="app-form-control" placeholder="Your message"/>
             </div>
             <div className="app-form-group buttons">
               <button className="app-form-button">Send</button>

@@ -7,15 +7,17 @@
   
 .container {
     flex: 0 1 700px;
-    margin: auto;
+    margin:  3rem auto 0 auto; /* Arriba | Derecha | Abajo | Izquierda*/
     padding: 10px;
 }
   
 .screen {
     position: relative;
 }
+
+/* COMENTADO PORQUE NO HACE NADA, DESPUÉS SI QUEDA BIEN EL RESULTADO FINAL LO BORRO*/
   
-.screen::after {
+/* .screen::after {
     content: '';
     display: block;
     position: absolute;
@@ -24,7 +26,7 @@
     right: 20px;
     bottom: 0;
     z-index: -1;
-}
+} */
   
 .screen-body {
     display: flex;
@@ -40,12 +42,12 @@
     flex-direction: column;
 }
   
-.app-title {
+ .app-title {
     display: flex;
     flex-direction: column;
     position: relative;
     color: hsl(0,0,0);
-    font-size: 26px;
+    font-size: clamp(1rem, 5vw, 3rem);
 }
   
 .app-title:after {
@@ -61,7 +63,7 @@
 
 .app-contact {
     margin-top: auto;
-    font-size: 8px;
+    font-size: 1rem;
     color: #000;
 }
   
@@ -86,7 +88,7 @@
     border-bottom: 1px solid #000;
     color: hsl(0,0,0);
     font-size: 14px;
-    text-transform: uppercase;
+    
     outline: none;
     transition: border-color .2s;
 }
