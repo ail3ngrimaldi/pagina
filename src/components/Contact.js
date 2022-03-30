@@ -1,5 +1,5 @@
-import React from 'react';
 import '../styles/Contact.css';
+import SocialNetworkButtons from './SocialNetwork';
 
 export default function Contact () {
     return (     
@@ -12,7 +12,9 @@ export default function Contact () {
             <span>Contact</span>
             <span>me</span>
           </div>
-          <div className="app-contact">Acá iconos de redes sociales: +54 11 1111 1111</div>
+          <div className="app-contact">
+            <SocialNetworkButtons/>
+          </div>
         </div>
         <div className="screen-body-item">
           <div className="app-form">
@@ -22,9 +24,6 @@ export default function Contact () {
             <div className="app-form-group">
               <input className="app-form-control" placeholder="Email"/>
             </div>
-            {/* <div className="app-form-group">
-              <input className="app-form-control" placeholder="CONTACT NO"/>
-            </div> */}
             <div className="app-form-group message">
               <input className="app-form-control" placeholder="Your message"/>
             </div>
