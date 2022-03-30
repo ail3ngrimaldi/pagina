@@ -47,7 +47,7 @@ export default function Home () {
             </svg>
 
             {/*Postgres svg*/}
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg" />
+            <img alt='Postgres' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg" />
 
             </div>
         </div>        
