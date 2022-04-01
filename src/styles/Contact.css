@@ -92,7 +92,10 @@
     outline: none;
     transition: border-color .2s;
 }
-  
+
+.app-form-control-requiredformailjs {
+  display: none;
+}
 .app-form-control::placeholder {
     color: #000;
 }

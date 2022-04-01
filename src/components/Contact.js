@@ -2,45 +2,32 @@ import '../styles/Contact.css';
 import SocialNetworkButtons from './SocialNetwork';
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
-import { useState } from 'react';
 
-const SERVICE_ID = 'ACAVAMISERVICEID'
-const TEMPLATE_ID = 'ACAVAMITEMPLATEID'
-const USER_ID = 'ACAVAMIUSERID'
+import{ init } from '@emailjs/browser';
+init("LQHT6R22i7hg7Ppqh");
 
 export default function Contact () {
 
-  const [data, setData] = useState({
-    name:'',
-    email:'',
-    message:''
-  })
-
-  const handleOnSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
 
-    setData({
-      ...data,
-      [e.target.name]:e.target.value
-    })
-
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
-    .then((result) =>  { 
-      console.log(result.text);
-      Swal.fire({
-        icon: 'success',
-        title: 'Message sent successfully! I will be in touch soon'
-    })
+    emailjs.sendForm('gmail', 'template_portfolio', e.target, 'LQHT6R22i7hg7Ppqh')
+    .then((result) => {
+        console.log(result.text);
+        Swal.fire ({
+          icon: 'success',
+          title: 'Thank you for your email, I`ll answer as soon as posible :)'
+        })
     }, (error) => {
-      console.log(error.text);
-      Swal.fire({
-        icon: 'error',
-        title: 'Ooops, something went wrong',
-        text: error.text
-      })
+        console.log(error.text);
+        Swal.fire({
+          icon: 'error',
+          title: 'Ooops, something went wrong',
+          text: 'I`ll try better next time :)',
+        })
     });
     e.target.reset()
-  };
+ };
   
 return (
 <div className="background">
@@ -57,20 +44,40 @@ return (
           </div>
         </div>
         <div className="screen-body-item">
-          <form className="app-form">
+          <form onSubmit={sendEmail} className="app-form">
             <div className="app-form-group">
               <input 
               className="app-form-control" 
               placeholder="Name"
-              name='name'
+              name='from_name'
+              id='from_name'
+              required
+              />
+            </div>
+            <div className="app-form-group">
+              <input 
+              className="app-form-control-requiredformailjs" 
+              placeholder="Ailen"
+              disabled
+              name='to_name'
+              id='to_name'
+              />
+            </div>
+            <div className="app-form-group">
+              <input 
+              className="app-form-control" 
+              placeholder="Email"
+              name='reply_to'
+              id='reply_to'
               required
               />
             </div>
             <div className="app-form-group">
               <input 
               className="app-form-control" 
-              placeholder="email"
-              name='email'
+              placeholder="Subject"
+              name='subject'
+              id='subject'
               required
               />
             </div>
@@ -79,13 +86,14 @@ return (
               className="app-form-control" 
               placeholder="Your message"
               name='message'
+              id='message'
               required
               />
             </div>
             <div className="app-form-group buttons">
               <button 
               className="app-form-button"
-              onSubmit={handleOnSubmit}
+              onSubmit={sendEmail}
               >Send</button>
             </div>
           </form>
