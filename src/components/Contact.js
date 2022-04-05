@@ -2,16 +2,21 @@ import '../styles/Contact.css';
 import SocialNetworkButtons from './SocialNetwork';
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
+import 'dotenv/config';
 
 import{ init } from '@emailjs/browser';
-init("LQHT6R22i7hg7Ppqh");
+const USER_ID = process.env.REACT_APP_USER_ID;
+init(USER_ID);
+
+const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
 
 export default function Contact () {
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('gmail', 'template_portfolio', e.target, 'LQHT6R22i7hg7Ppqh')
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
     .then((result) => {
         console.log(result.text);
         Swal.fire ({
@@ -28,6 +33,7 @@ export default function Contact () {
     });
     e.target.reset()
  };
+
   
 return (
 <div className="background">
