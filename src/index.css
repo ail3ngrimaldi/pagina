@@ -11,6 +11,11 @@ html, body {
   padding: 0;
 }
 
+a {
+  color:hsl(320.5, 36.6%, 43.9%);
+  text-decoration: none;
+}
+
 *, *::before, *::after {
   box-sizing: inherit;
 }
