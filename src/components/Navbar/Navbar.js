@@ -20,7 +20,7 @@ const Navbar = ( {toggle} ) => {
           <NavLink className='efectoNav' to='/about' >
             About
           </NavLink>
-          <NavLink className='efectoNav' to='/projects' >
+          <NavLink className='efectoNav' to='/portfolio' >
             Portfolio
           </NavLink>
         </NavMenu>

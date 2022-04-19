@@ -3,6 +3,8 @@
     background-image: linear-gradient(2deg, hsl(22, 94%, 74%) 50%, hsl(43, 90%, 69%) 100%);
     display: flex;
     min-height: 100vh;
+    position: relative;
+    z-index: -3;
 }
   
 .container {
@@ -13,6 +15,7 @@
   
 .screen {
     position: relative;
+    z-index: -1;
 }
   
 .screen-body {

@@ -9,7 +9,7 @@ import {
 import Home from '../pages/Home';
 import NotFound from '../pages/Notfound';
 import AboutMe from '../components/AboutMe';
-import Projects from '../components/Projects';
+import Portfolio from '../components/Portfolio';
 import Contact from "../components/Contact";
 import Layout from "../components/Layout";
 
@@ -20,7 +20,7 @@ function App() {
         <Routes className="App">
             <Route path="/" element={<Home /> } />
             <Route exact path="about" element={<AboutMe />} />
-            <Route exact path="projects" element={<Projects />} />
+            <Route exact path="portfolio" element={<Portfolio />} />
             <Route exact path="contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
         </Routes>

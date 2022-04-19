@@ -20,7 +20,7 @@ const Sidebar = ( {isOpen, toggle} ) => {
                     <SidebarLink to='/about'>
                         About
                     </SidebarLink>
-                    <SidebarLink to='/projects'>
+                    <SidebarLink to='/portfolio'>
                         Portfolio
                     </SidebarLink>
                 </SidebarMenu>
