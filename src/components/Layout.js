@@ -1,10 +1,11 @@
-import Navbar from './Header';
+import { NavAndSidebar } from './NavAndSidebar';
 import Footer from './Footer';
+
 
 export default function Layout ({ children }) {
     return (
         <div className='App'>
-        <Navbar/>
+        <NavAndSidebar/>
            {children}
         <Footer/>
         </div>

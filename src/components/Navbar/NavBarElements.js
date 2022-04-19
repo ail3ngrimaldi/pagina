@@ -9,8 +9,6 @@ export const Nav = styled.nav`
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1000px) / 2);
   z-index: 10;
-  /* Third Nav */
-  /* justify-content: flex-start; */
 `;
 
 export const NavLink = styled(Link)`
@@ -22,7 +20,7 @@ export const NavLink = styled(Link)`
   height: 100%;
   cursor: pointer;
   &.active {
-    font-style: bold;
+    font-size: 17.5px;
   }
 `;
 
@@ -34,7 +32,7 @@ export const Bars = styled(FaBars)`
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 75%);
+    transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
   }
@@ -48,7 +46,6 @@ export const NavMenu = styled.div`
     display: none;
   }
 `;
-
 
 export const NavBtn = styled.nav`
   display: flex;
