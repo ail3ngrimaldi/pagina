@@ -1,4 +1,4 @@
-import '../styles/Header.css';
+import '../../styles/Header.css';
 import {
   Nav,
   NavLink,
@@ -8,11 +8,11 @@ import {
   NavBtnLink
 } from './NavBarElements';
 
-const Navbar = () => {
+const Navbar = ( {toggle} ) => {
   return (
     <>
       <Nav>
-        <Bars />
+        <Bars onClick={toggle}/>
         <NavMenu>
         <NavLink className='efectoNav' to='/' >
             Home
@@ -20,7 +20,7 @@ const Navbar = () => {
           <NavLink className='efectoNav' to='/about' >
             About
           </NavLink>
-          <NavLink className='efectoNav' to='/projects' >
+          <NavLink className='efectoNav' to='/portfolio' >
             Portfolio
           </NavLink>
         </NavMenu>
