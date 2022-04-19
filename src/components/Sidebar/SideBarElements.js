@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export const SidebarContainer = styled.aside`
     position: fixed;
     x-index: 99999;
-    width: 100%
+    width: 100%;
     height: 100%;
     background: #0d0d0d;
     display: grid;
@@ -14,7 +14,7 @@ export const SidebarContainer = styled.aside`
     left: 0;
     transition: 0.3s ease-in-out;
     opacity: ${({ isOpen}) => (isOpen ? '100%' : '0')};
-    top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+    top: ${({ isOpen }) => (isOpen ? '0' : '100%')};
     `
 
 export const CloseIcon = styled(FaTimes)`
@@ -44,7 +44,8 @@ export const SidebarLink = styled(Link)`
     list-style: none;
     transition: 0.2s ease-in-out;
     color: #fff;
-    cursor: pointer:
+    cursor: pointer;
+    
     &:hover {
         color: #01bf71;
         transition: 0.2s ease-in-out;

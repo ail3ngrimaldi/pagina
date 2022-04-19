@@ -14,19 +14,6 @@
 .screen {
     position: relative;
 }
-
-/* COMENTADO PORQUE NO HACE NADA, DESPUÉS SI QUEDA BIEN EL RESULTADO FINAL LO BORRO*/
-  
-/* .screen::after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 20px;
-    right: 20px;
-    bottom: 0;
-    z-index: -1;
-} */
   
 .screen-body {
     display: flex;
@@ -88,7 +75,6 @@
     border-bottom: 1px solid #000;
     color: hsl(0,0,0);
     font-size: 14px;
-    
     outline: none;
     transition: border-color .2s;
 }
@@ -122,8 +108,8 @@
     content: "";
     background-color: hsl(11, 80%, 63%);
     width: 100%;
-    z-index: -1;
     position: absolute;
+    z-index: -2;
     height: 100%;
     top: 7px;
     left: 7px;
