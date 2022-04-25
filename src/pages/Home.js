@@ -7,7 +7,7 @@ export default function Home () {
             Hey! I'm Ailén
             </h2>
             <h3 className='typography'>
-                Another fullstack web developer!
+                A fullstack web developer!
             </h3>
         <div className='icons_container'>
             

@@ -3,7 +3,7 @@
     border-right: .15em solid rgb(7, 7, 7); /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .30em; /* Adjust as needed */
+    letter-spacing: .10em;
     animation: 
       typing 3.5s steps(40, end),
       blink-caret .75s step-end infinite;
@@ -11,7 +11,7 @@
 
 @keyframes typing {
     from { width: 0 }
-    to { width: 45% }
+    to { width: 35% }
   }
 
   @keyframes blink-caret {
@@ -22,9 +22,11 @@
 .icons_container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 img {
+  
     position: relative;
     margin-top: 2rem;
     margin-right: 2rem;

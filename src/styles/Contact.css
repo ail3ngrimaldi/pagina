@@ -4,13 +4,15 @@
     display: flex;
     min-height: 100vh;
     position: relative;
-    z-index: -3;
+    z-index: 0;
 }
   
 .container {
     flex: 0 1 700px;
     margin:  3rem auto 0 auto; /* Arriba | Derecha | Abajo | Izquierda*/
     padding: 10px;
+    position: relative;
+    z-index: 3;
 }
   
 .screen {
@@ -59,6 +61,8 @@
   
 .app-form-group {
     margin-bottom: 15px;
+    position: relative;
+    z-index: 2;
 }
   
 .app-form-group.message {
@@ -85,6 +89,7 @@
 .app-form-control-requiredformailjs {
   display: none;
 }
+
 .app-form-control::placeholder {
     color: #000;
 }
@@ -104,7 +109,7 @@
     cursor: pointer;
     position: relative;
     background-color: rgba(0, 0, 0, 0);
-    z-index: 0;
+    z-index: 3;
 }
 
 .app-form-button::after {
@@ -112,10 +117,10 @@
     background-color: hsl(11, 80%, 63%);
     width: 100%;
     position: absolute;
-    z-index: -2;
+    z-index: -1;
     height: 100%;
-    top: 7px;
-    left: 7px;
+    top: 5px;
+    left: 5px;
     transition: 0.2s;
   }
   
