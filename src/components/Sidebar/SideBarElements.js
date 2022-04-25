@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export const SidebarContainer = styled.aside`
     position: fixed;
-    x-index: 99999;
+    z-index: 2;
     width: 100%;
     height: 100%;
     background: #0d0d0d;
