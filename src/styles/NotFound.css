@@ -1,7 +1,9 @@
 .notfound-div {
+    font-size: clamp(0.01rem, 5vw, 1rem);
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    padding: 2rem;
     height: 90vh;
     background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(255,200,124,1) 0%, rgba(252,251,121,1) 90% );
 }
