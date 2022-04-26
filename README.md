@@ -1,6 +1,6 @@
 # My Portfolio
 This is a simple page that I created using Javascript, react and CSS, you'll be able to watch it online soon.
 
-You can see the result here: ailengrimaldi.com
+You can see the result here: www.ailengrimaldi.com
 
 I hope you like it!
