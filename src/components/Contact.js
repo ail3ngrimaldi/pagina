@@ -57,7 +57,7 @@ return (
               placeholder="Name"
               name='from_name'
               id='from_name'
-              required
+              required minlength="2" maxlength="50"
               />
             </div>
             <div className="app-form-group">
@@ -84,7 +84,7 @@ return (
               placeholder="Subject"
               name='subject'
               id='subject'
-              required
+              minlength="2" maxlength="50"
               />
             </div>
             <div className="app-form-group message">
@@ -93,7 +93,7 @@ return (
               placeholder="Your message"
               name='message'
               id='message'
-              required
+              required minlength="10" maxlength="400"
               />
             </div>
             <div className="app-form-group buttons">
