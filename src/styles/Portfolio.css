@@ -1,0 +1,19 @@
+.portfolio-title {
+    font-size: clamp(1rem, 5vw, 3rem);
+    text-align: center;
+  }
+  
+.portfolio-container {
+    background-color: hsl(22, 94%, 74%);
+    background-image: linear-gradient(2deg, hsl(22, 94%, 74%) 50%, hsl(43, 90%, 69%) 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+  
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
