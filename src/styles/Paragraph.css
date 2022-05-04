@@ -15,7 +15,3 @@ div .paragraph {
     line-height: 25px;
     height: 100vh;
 }
-
-.ul_portfolio {
-  flex-direction: column;
-}
