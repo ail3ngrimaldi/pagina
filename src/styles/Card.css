@@ -7,11 +7,11 @@
     display: grid;
     width: min-content;
     align-self: center;
-    box-shadow: 1px 1px 5px 0px;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, .25);
 }
 
 .card-main-container:hover {
-    box-shadow: 2px 2px 30px 0px;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, .5);
 }
 
 
@@ -77,7 +77,8 @@
 
 i {
     padding: 0.9rem 0.9rem 0.9rem 0.9rem;
-    background-color: hsl(115, 48%, 56%);
+    background-color: hsl(120, 100%, 64%);
+    border-right: 2px solid black;
 }
 
 .search-bar{
@@ -87,6 +88,7 @@ i {
 .white-space{
     background-color: aliceblue;
     margin: 0.9rem;
+    padding: 0.25rem 0 0.25rem 0; /* top-right-bottom-left*/
     border: 0.2rem solid black;
     overflow: hidden;
     font-weight: bold;

@@ -17,7 +17,7 @@ function Card ({data}) {
                 </nav>
             <div className='card-body'>
                 <div className='search-bar'>
-                    <div className='white-space'><i>{<FaSearch/>}</i>{data.title}</div>
+                    <div className='white-space'><i>{<FaSearch/>}</i>  {data.title}</div>
                 </div>
                     <div className='card-container'>
                         <div className='container-one'>{data.content}</div>
