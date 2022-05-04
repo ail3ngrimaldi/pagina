@@ -77,7 +77,8 @@
 
 i {
     padding: 0.9rem 0.9rem 0.9rem 0.9rem;
-    background-color: hsl(115, 48%, 56%);
+    background-color: hsl(120, 100%, 64%);
+    border-right: 2px solid black;
 }
 
 .search-bar{
@@ -87,7 +88,7 @@ i {
 .white-space{
     background-color: aliceblue;
     margin: 0.9rem;
-    padding: 0.25rem;
+    padding: 0.25rem 0 0.25rem 0; /* top-right-bottom-left*/
     border: 0.2rem solid black;
     overflow: hidden;
     font-weight: bold;
